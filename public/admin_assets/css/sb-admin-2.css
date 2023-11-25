@@ -3270,6 +3270,13 @@ input[type="button"].btn-block {
   width: auto;
 }
 
+.btn-group > .btn {
+  flex: 1;
+  border-radius: 0;
+  margin-left: -1px;
+}
+
+
 .btn-group > .btn:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
