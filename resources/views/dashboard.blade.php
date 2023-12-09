@@ -1,6 +1,6 @@
 @extends('layouts.app')
   
-@section('title', 'Dashboard - Mod by Adin Products')
+@section('title', 'Mod by Adin - Catalogue Products')
   
 @section('contents')
   <div class="row">
