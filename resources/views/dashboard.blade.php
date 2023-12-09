@@ -3,7 +3,7 @@
 @section('title', 'Mod by Adin - Catalogue Products')
   
 @section('contents')
-  <div class="row">
+  <!-- <div class="row">
     Dashboard
-  </div>
+  </div> -->
 @endsection

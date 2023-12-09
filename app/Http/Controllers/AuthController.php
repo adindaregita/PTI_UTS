@@ -66,8 +66,18 @@ class AuthController extends Controller
         return redirect('/');
     }
  
-    public function profile()
+    public function updateProfile()
     {
-        return view('profile');
+        Validator::make($request->all(), [
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required',
+            'address' => 'required'
+        ])->validate();
+        $user = User::findOrFail(auth()->user()->id);
+        $user->update($request->all());
+        return redirect()->route('profile')->with('success', 'Profile updated successfully');
     }
+
+
 }

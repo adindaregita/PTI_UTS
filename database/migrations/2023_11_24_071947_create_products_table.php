@@ -12,6 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('price');
+            $table->string('image');
             $table->string('product_code');
             $table->text('description');
             $table->timestamps();
